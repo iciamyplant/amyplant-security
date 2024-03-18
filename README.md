@@ -47,9 +47,9 @@ python 3.10.12
 Ubuntu 20.04
 
 #### Déployer une app Flask sur un VPS Ubuntu 
-(https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04#step-3-checking-your-web-server)[How To Install the Apache Web Server on Ubuntu 22.04]
-(https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)[How To Deploy a Flask Application on an Ubuntu VPS]
-(https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)[mec qui applique le tuto corrige erreurs]
+[How To Install the Apache Web Server on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04#step-3-checking-your-web-server)
+[How To Deploy a Flask Application on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
+[mec qui applique le tuto corrige erreurs](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
 ```
 tail -f /var/log/apache2/error.log
 ```
@@ -65,13 +65,13 @@ netstat -na | grep :9001 # voir s’il est utilisé
 sudo ufw allow 9001
 netstat -lntu # lister tous les ports ouverts
 ```
-[https://www.youtube.com/watch?v=MfIwhxBQAp0](tuto)
-[https://www.youtube.com/watch?v=Lbfe3-v7yE0](tuto autre)
+[tuto](https://www.youtube.com/watch?v=MfIwhxBQAp0)
+[tuto autre](https://www.youtube.com/watch?v=Lbfe3-v7yE0)
 
 #### id mdp pour rentrer sur le site
 htpasswd -c /etc/apache2/.htpasswd amy
 cat /etc/apache2/.htpasswd ⇒ hash version of our password
-[https://tonyteaches.tech/basic-authentication/](tuto)
+[tuto add id mdp admin](https://tonyteaches.tech/basic-authentication/)
 
 #### fond bleu foncé
 
