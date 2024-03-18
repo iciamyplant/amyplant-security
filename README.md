@@ -43,6 +43,17 @@ Là l'objectif c'est de build and train the deep learning model based on the dat
 ## IV- Flask App
 ## V- Deployement
 
+python 3.10.12
+Ubuntu 20.04
+
+#### Déployer une app Flask sur un VPS Ubuntu 
+(https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04#step-3-checking-your-web-server)[How To Install the Apache Web Server on Ubuntu 22.04]
+(https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)[How To Deploy a Flask Application on an Ubuntu VPS]
+(https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)[mec qui applique le tuto corrige erreurs]
+```
+tail -f /var/log/apache2/error.log
+```
+
 #### sockets to transfer camera frames
 But : avoir les frames de la caméra sur le site. Idées : faire tourner le code en local et envoyer que le résultat à imprimer sur le site, create an IP caméra, Use an ipcamera protocol such as RTMP to create a stream, sockets
 socket = établir une connexion entre deux machines et transmettre de l’information
@@ -56,7 +67,6 @@ netstat -lntu # lister tous les ports ouverts
 ```
 [https://www.youtube.com/watch?v=MfIwhxBQAp0](tuto)
 [https://www.youtube.com/watch?v=Lbfe3-v7yE0](tuto autre)
-
 
 #### id mdp pour rentrer sur le site
 htpasswd -c /etc/apache2/.htpasswd amy
