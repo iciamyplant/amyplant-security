@@ -41,10 +41,24 @@ Là l'objectif c'est de build and train the deep learning model based on the dat
 ## III- Recognition
 
 ## IV- Flask App
+
+.wsgi : /var/www/FlaskApp flaskapp.wsgi
+__init__.py : /var/www/FlaskApp/FlaskApp __init__.py
+create virtual environnement
+venv : /var/www/FlaskApp/FlaskApp/venv
+.conf : etc/apache2/sites-available/FlaskApp.conf
+
+
 ## V- Deployement
 
 python 3.10.12
 Ubuntu 20.04
+
+#### transfer files to VPS ssh
+```
+scp file root@ip_adress:/var/www/
+scp -r directory root@ip_adress:/var/www/
+```
 
 #### Déployer une app Flask sur un VPS Ubuntu 
 [How To Install the Apache Web Server on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04#step-3-checking-your-web-server)
