@@ -35,11 +35,39 @@ Là l'objectif c'est de build and train the deep learning model based on the dat
 ## II- Gender and age
 
 ```
-Créer le premier site :
-/img = on range les images du site
-/dossier css = on a range les feuilles de style
-/dossier js = pour les animations
-index.hmtl = page principale de notre site web, première page sur laquelle les utilisateurs arrivent
+
 ```
 
 ## III- Recognition
+
+## IV- Flask App
+## V- Deployement
+
+#### sockets to transfer camera frames
+But : avoir les frames de la caméra sur le site. Idées : faire tourner le code en local et envoyer que le résultat à imprimer sur le site, create an IP caméra, Use an ipcamera protocol such as RTMP to create a stream, sockets
+socket = établir une connexion entre deux machines et transmettre de l’information
+- protocole tcp : avec une connexion, on doit etablir une connexion pr pouvoir parler entre les deux, et de manière ordonnée
+- un socket de datagramme udp : non connecté, non fiable, plus rapide
+```
+#### ouvrir le port 9001 sur le VPS
+netstat -na | grep :9001 # voir s’il est utilisé
+sudo ufw allow 9001
+netstat -lntu # lister tous les ports ouverts
+```
+[https://www.youtube.com/watch?v=MfIwhxBQAp0](tuto)
+[https://www.youtube.com/watch?v=Lbfe3-v7yE0](tuto autre)
+
+
+#### id mdp pour rentrer sur le site
+htpasswd -c /etc/apache2/.htpasswd amy
+cat /etc/apache2/.htpasswd ⇒ hash version of our password
+[https://tonyteaches.tech/basic-authentication/](tuto)
+
+#### fond bleu foncé
+
+#### Nom de domaine 
+Point a Domain to VPS Using the A Record
+https://www.hostinger.com/tutorials/dns/how-to-point-domain-to-vps
+https://www.youtube.com/watch?v=QcNBLSSn8Vg
+DNS de type A, qui pointe vers notre adresse IP 
+
