@@ -63,7 +63,7 @@ scp -r directory root@ip_adress:/var/www/
 #### Déployer une app Flask sur un VPS Ubuntu 
 [How To Install the Apache Web Server on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04#step-3-checking-your-web-server)
 [How To Deploy a Flask Application on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
-[mec qui applique le tuto corrige erreurs](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
+[mec qui applique le tuto corrige erreurs](https://www.youtube.com/watch?v=7j6Oq9S5V_k&t=700s)
 ```
 tail -f /var/log/apache2/error.log
 ```
