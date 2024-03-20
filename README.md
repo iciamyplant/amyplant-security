@@ -42,6 +42,9 @@ Là l'objectif c'est de build and train the deep learning model based on the dat
 
 ## IV- Flask App
 
+stream video to a web browser using Flask and OpenCV
+Flask, a micro web framework for the Python programming language
+
 .wsgi : /var/www/FlaskApp flaskapp.wsgi
 __init__.py : /var/www/FlaskApp/FlaskApp __init__.py
 create virtual environnement
